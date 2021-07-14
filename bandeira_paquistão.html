@@ -1,0 +1,49 @@
+<meta charset = "UTF-8">
+
+<canvas width = "475" height = "325"></canvas>
+
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	//retângulo
+	pincel.fillStyle = "darkgreen";
+	pincel.fillRect(0, 0, 475, 325);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(0, 0, 475, 325);
+
+	//faixa 
+	pincel.fillStyle = "white";
+	pincel.fillRect(0, 0, 118.75, 325);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(0, 0, 118.75, 325);
+
+	//círculos
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.arc(296.875, 162.5, 100, 0, 2 * Math.PI);
+	pincel.fill();
+
+	pincel.fillStyle = "darkgreen";
+	pincel.beginPath();
+	pincel.arc(320, 140, 85, 0, 2 * Math.PI);
+	pincel.fill();
+
+	//estrela
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.moveTo(340, 80);
+	pincel.lineTo(345, 130);
+	pincel.lineTo(355, 110);
+	pincel.lineTo(375, 115);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(323, 105);
+	pincel.lineTo(355, 110);
+	pincel.lineTo(370, 85);
+	pincel.fill();
+
+	document.write("<font color = darkgreen><h1><u>Bandeira do Paquistão</u></h1></font>");
+
+</script>

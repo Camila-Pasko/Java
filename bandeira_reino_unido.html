@@ -1,0 +1,187 @@
+<meta charset = "UTF-8">
+<canvas width = "1350" height = "990"></canvas>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	//Inglaterra 
+	pincel.fillStyle = "red";
+	pincel.fillRect(50, 50, 400, 200);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(50, 50, 400, 200);
+	pincel.fillStyle = "white";
+	pincel.fillRect(50, 50, 175, 75);
+	pincel.fillRect(275, 50, 175, 75);
+	pincel.fillRect(50, 175, 175, 75);
+	pincel.fillRect(275, 175, 175, 75);
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "black";
+	pincel.fillText("Cruz de São Jorge - Inglaterra (1606 - atualmente)", 60, 275);
+
+	//Mais
+	pincel.fillStyle = "firebrick";
+	pincel.fillRect(500, 125, 150, 50);
+	pincel.fillRect(550, 75, 50, 150);
+
+	//Escócia 
+	pincel.fillStyle = "dodgerblue";
+	pincel.fillRect(700, 50, 400, 200);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(700, 50, 400, 200);
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.moveTo(700, 75);
+	pincel.lineTo(1050, 250);
+	pincel.lineTo(1100, 250);
+	pincel.lineTo(1100, 225);
+	pincel.lineTo(750, 50);	
+	pincel.lineTo(700, 50);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(700, 225);
+	pincel.lineTo(700, 250);
+	pincel.lineTo(750, 250);
+	pincel.lineTo(1100, 75);
+	pincel.lineTo(1100, 50);	
+	pincel.lineTo(1050, 50);
+	pincel.fill();	
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "black";
+	pincel.fillText("Cruz de Santo André - Escócia (1542 - atualmente)", 710, 275);
+
+	//Seta
+	pincel.fillStyle = "firebrick";
+	pincel.fillRect(550, 300, 50, 100);
+	pincel.fillRect(540, 350, 10, 50)
+	pincel.fillStyle = "firebrick";
+	pincel.beginPath();
+	pincel.moveTo(540, 325);
+	pincel.lineTo(540, 425);
+	pincel.lineTo(500, 375);
+	pincel.fill();
+
+	//Grã-Bretanha 
+	pincel.fillStyle = "darkblue";
+	pincel.fillRect(50, 300, 400, 200);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(50, 300, 400, 200);
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.moveTo(50, 300);
+	pincel.lineTo(50, 325);
+	pincel.lineTo(400, 500);
+	pincel.lineTo(450, 500);
+	pincel.lineTo(450, 475);
+	pincel.lineTo(100, 300);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(50, 475);
+	pincel.lineTo(50, 500);
+	pincel.lineTo(100, 500);
+	pincel.lineTo(450, 325);
+	pincel.lineTo(450, 300);
+	pincel.lineTo(400, 300);
+	pincel.fill();
+	pincel.fillRect(210, 300, 80, 200);
+	pincel.fillRect(50, 360, 400, 80);
+	pincel.fillStyle = "red";
+	pincel.fillRect(225, 300, 50, 200);
+	pincel.fillRect(50, 375, 400, 50);
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "black";
+	pincel.fillText("Grã-Bretanha (1707 - 1801)", 60, 517);
+
+	//Mais
+	pincel.fillStyle = "firebrick";
+	pincel.fillRect(225, 550, 50, 150);
+	pincel.fillRect(175, 600, 150, 50);
+
+	//Seta
+	pincel.fillStyle = "firebrick";
+	pincel.fillRect(450, 600, 100, 50);
+	pincel.beginPath();
+	pincel.moveTo(550, 575);
+	pincel.lineTo(550, 675);
+	pincel.lineTo(600, 625);
+	pincel.fill();
+
+	//Irlanda
+	pincel.fillStyle = "white";
+	pincel.fillRect(50, 750, 400, 200);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(50, 750, 400, 200);
+	pincel.fillStyle = "red";
+	pincel.beginPath();
+	pincel.moveTo(50, 750);
+	pincel.lineTo(50, 775);
+	pincel.lineTo(400, 950);
+	pincel.lineTo(450, 950);
+	pincel.lineTo(450, 925);
+	pincel.lineTo(100, 750);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(50, 925);
+	pincel.lineTo(50, 950);
+	pincel.lineTo(100, 950);
+	pincel.lineTo(450, 775);
+	pincel.lineTo(450, 750);
+	pincel.lineTo(400, 750);
+	pincel.fill();	
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "black";
+	pincel.fillText("Cruz de São Patrício - Ilha da Irlanda (1783 - 1922)", 60, 975);
+
+	//Reino Unido 
+	pincel.fillStyle = "darkblue";
+	pincel.fillRect(700, 525, 400, 200);
+	pincel.strokeStyle = "black";
+	pincel.strokeRect(700, 525, 400, 200);
+
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.moveTo(700, 525);
+	pincel.lineTo(700, 550);
+	pincel.lineTo(1050, 725);
+	pincel.lineTo(1100, 725);
+	pincel.lineTo(1100, 700);
+	pincel.lineTo(750, 525);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(700, 700);
+	pincel.lineTo(700, 725);
+	pincel.lineTo(750, 725);
+	pincel.lineTo(1100, 550);
+	pincel.lineTo(1100, 525);
+	pincel.lineTo(1050, 525);
+	pincel.fill();
+
+	pincel.fillStyle = "red";
+	pincel.beginPath();
+	pincel.moveTo(700, 525);
+	pincel.lineTo(700, 540);
+	pincel.lineTo(1100, 725);
+	pincel.lineTo(1100, 710);
+	pincel.fill();
+	pincel.beginPath();
+	pincel.moveTo(700, 725);
+	pincel.lineTo(725, 725);
+	pincel.lineTo(1100, 525);
+	pincel.lineTo(1075, 525);
+	pincel.fill();
+
+	pincel.fillStyle = "white";
+	pincel.fillRect(860, 525, 80, 200);
+	pincel.fillRect(700, 585, 400, 80);
+
+	pincel.fillStyle = "red";
+
+	pincel.fillRect(875, 525, 50, 200);
+	pincel.fillRect(700, 600, 400, 50);
+
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "black";
+	pincel.fillText("Reino Unido (1801 - atualmente)", 710, 750);
+
+</script>

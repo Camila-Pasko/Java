@@ -1,0 +1,81 @@
+<meta charset = "UTF-8">
+
+<canvas width="600" height="420"></canvas>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	//retângulo
+	pincel.fillStyle = "green";
+	pincel.fillRect(0, 0, 600, 420);
+
+	//losango
+	pincel.fillStyle = "yellow";
+	pincel.beginPath();
+	pincel.moveTo(300, 51);
+	pincel.lineTo(549, 210);
+	pincel.lineTo(300, 369);
+	pincel.lineTo(51, 210);
+	pincel.fill();
+
+	//círculo
+	pincel.fillStyle = "blue";
+	pincel.beginPath();
+	pincel.arc(300, 210, 98, 0, 2 * 3.14);
+	pincel.fill();
+
+	//faixa
+	pincel.fillStyle = "white";
+	pincel.fillRect(202, 202.5, 196, 15);
+	pincel.font= "15px Georgia";
+	pincel.fillStyle = "green";
+	pincel.fillText("ORDEM E PROGRESSO", 215, 216);
+
+	//estrelas
+	function desenhaEstrela(x, y) {
+		pincel.beginPath();
+		pincel.fillStyle = "white";
+		pincel.moveTo(x, y-5);
+		pincel.lineTo(x-1, y-1);
+		pincel.lineTo(x-5, y-1);
+		pincel.lineTo(x-2, y+1);
+		pincel.lineTo(x-3, y+5);
+		pincel.lineTo(x, y+3);
+		pincel.lineTo(x+3, y+5);
+		pincel.lineTo(x+2, y+1);
+		pincel.lineTo(x+5, y-1);
+		pincel.lineTo(x+1, y-1);
+		pincel.fill();
+	}
+
+	desenhaEstrela(330, 190); // Pará
+	desenhaEstrela(230, 230); // Mato Grosso do Sul
+	desenhaEstrela(310, 227); // Acre
+	desenhaEstrela(268, 240); // Amazonas
+	desenhaEstrela(235, 270); // Amapá
+	desenhaEstrela(245, 263); // Mato Grosso
+	desenhaEstrela(255, 256); // Rondônia
+	desenhaEstrela(270, 270); // Roraima
+	desenhaEstrela(265, 280); // Tocantins
+	desenhaEstrela(280, 290); // Goiás
+	desenhaEstrela(300, 240); // Bahia
+	desenhaEstrela(290, 250); // Minas Gerais
+	desenhaEstrela(310, 250); // Rio de Janeiro
+	desenhaEstrela(298, 253); // Espírito Santo
+	desenhaEstrela(300, 270); // São Paulo
+	desenhaEstrela(300, 296); // Distrito Federal
+	desenhaEstrela(385, 227); // Maranhão
+	desenhaEstrela(370, 233); // Piauí
+	desenhaEstrela(378, 240); // Ceará
+	desenhaEstrela(375, 252); // Rio Grande do Norte
+	desenhaEstrela(365, 260); // Paraíba
+	desenhaEstrela(352, 260); // Alagoas
+	desenhaEstrela(339, 265); // Santa Catarina
+	desenhaEstrela(352, 272); // Sergipe
+	desenhaEstrela(352, 282); // Pernambuco 
+	desenhaEstrela(333, 285); // Rio Grande do Sul
+	desenhaEstrela(325, 276); // Paraná
+	
+</script>
