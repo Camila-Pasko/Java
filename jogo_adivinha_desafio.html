@@ -1,0 +1,34 @@
+<meta charset = "UTF-8">
+
+<script>
+	
+	function pulaLinha() {document.write("<br>");}
+	function mostra(frase) {document.write(frase); pulaLinha();}
+	function sorteia(n) {
+		return Math.round(Math.random() * n);
+	}
+
+	var numero = sorteia(10);
+	var tentativas = 1
+
+	while (tentativas <= 3) {
+
+		var chute = parseInt(prompt("Eu pensei em um número, de 1 à 10, qual você acha que é?"));
+
+		if (chute == numero) {
+		mostra("Caramba! Você acertou, parabéns!");
+		break;
+		} 
+
+		if (chute > numero) {
+		mostra("Não foi dessa vez, você chutou um número maior.");
+		} 
+		if (chute < numero) {
+		mostra("Não foi dessa vez, você chutou um número menor.");
+		}
+
+		tentativas++
+
+	}
+
+</script>
